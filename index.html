@@ -65,6 +65,22 @@
         .contact-links a {
             text-decoration: none;
         }
+
+        .activity-card-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .activity-card .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
     </style>
 </head>
 
@@ -145,9 +161,47 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <section id="activities" class="container"
+        style="padding: 50px 0; margin-top: 25px; margin-bottom: 50px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2 class="text-center mb-5" style="font-weight: 600;">Activities</h2>
+        <div class="row justify-content-center">
+
+            <div class="col-md-4 d-flex" style="margin: 10px 0;">
+                <div class="card flex-fill activity-card">
+                    <img src="assets/device_showcase.jpg" class="card-img-top" alt="Device Showcase Activity">
+                    <div class="card-body text-center activity-card-body">
+                        <div>
+                            <h5 class="card-title">Activity 4</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Device Showcase</h6>
+                            <p class="card-text text-muted mt-3">A web page created for showcasing a specific device.
+                            </p>
+                        </div>
+                        <a href="https://hartlacuarin.github.io/device_showcase" target="_blank"
+                            class="btn btn-primary mt-3">View Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 d-flex" style="margin: 10px 0;">
+                <div class="card flex-fill activity-card">
+                    <img src="assets/place_showcase.jpg" class="card-img-top" alt="Place Showcase Activity">
+                    <div class="card-body text-center activity-card-body">
+                        <div>
+                            <h5 class="card-title">Activity 5</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Place Showcase</h6>
+                            <p class="card-text text-muted mt-3">A web page created for showcasing a specific location.
+                            </p>
+                        </div>
+                        <a href="https://hartlacuarin.github.io/place_showcase" target="_blank"
+                            class="btn btn-primary mt-3">View Activity</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
